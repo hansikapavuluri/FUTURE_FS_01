@@ -1,0 +1,30 @@
+
+
+
+[
+  {
+    "title": "🏋️ Gym Website",
+    "description": "A responsive fitness website built with React. Features a modern UI and smooth navigation to showcase gym services and plans.",
+   
+    "githubLink": "https://github.com/hansikapavuluri/gym-ui-react.git",
+    "image": "public/project1.png",
+    "techStack": ["HTML", "CSS", "React"]
+  },
+  {
+    "title": "🎬 Movie Website",
+    "description": "A dynamic movie information site created using React. Users can browse movies, view details, and explore categories with a clean interface.",
+   
+    "githubLink": "https://github.com/hansikapavuluri/movie-ui-react.git",
+    "image": "public/project2.png",
+    "techStack": ["HTML", "CSS", "React"]
+  },
+  {
+    "title": "🌐 Portfolio Website",
+    "description": "My personal portfolio built using the MERN stack. Includes sections like Home, About, Skills, Projects, and Contact with a professional layout.",
+
+    "githubLink": "#",
+    "image": "public/project3.png",
+    "techStack": ["HTML", "CSS", "React"]
+  }
+]
+

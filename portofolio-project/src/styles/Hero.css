@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
+.hero-section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow:hidden;
+    background: #bf0603;
+}
+
+video{
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;   /* force full viewport width */
+  height: 100vh;  /* force full viewport height */
+  object-fit: cover;   /* scale video to fill */
+  object-position: center; /* keep focus centered */
+  z-index: 0;
+
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3); 
+  z-index: 1;
+}
+.hero-content{
+    position:absolute;
+    top:35%;
+    left:40px;
+    color:#fff;
+    max-width: 700px;
+    z-index: 1;
+}
+.title{
+    font-size: 3.8rem;
+    line-height: 70px;
+    margin-bottom:35px;
+    letter-spacing: -3px;
+    word-spacing: 4px;
+    color:white;
+    font-size: 4rem;
+     text-shadow: -4px 1px 2px black;
+}
+.title span{
+    font-family: "Train One", system-ui;
+    color:white;
+    letter-spacing: -1px;
+    font-weight: 400;
+    font-size: 3.8rem;
+    word-spacing: -3px;
+    text-shadow: -4px 1px 2px black;
+}
+.tagline{
+    max-width: 450px;
+    color:white;
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size:1.1rem
+    
+}
+.btns{
+    display:flex;
+    gap:20px;
+}
+.primary-btn,.secondary-btn{
+    padding:7px 25px;
+    border-radius: 20px;
+    border: none;
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.3);
+    font-weight: 600;
+    color:white;
+    font-size:14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.primary-btn:hover,.secondary-btn:hover{
+    transform: translate(2px,4px);
+    box-shadow:0 0 5px white;
+    
+}
+
+.control-btn {
+  z-index: 1;
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  font-size: 32px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  text-shadow: 0 0 8px darkred;
+  cursor: pointer;
+}
+@media (max-width: 480px){
+    video{
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero-content{
+        top:50%;
+        left:20px;
+        padding-right: 20px;
+        max-width: 700px;
+    }
+    .title{
+        line-height: 40px;
+        letter-spacing: -1px;
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+    }
+    .title span{
+        letter-spacing: -1px;
+        font-weight: 400;
+        font-size: 1.9rem;
+    }
+    .tagline{
+         margin-bottom: 20px;
+         font-size:0.8rem
+    }
+    .btns{
+        flex-direction: column;
+        gap:15px;
+    }
+    .control-btn{
+        bottom: 5%;
+        right: 10%;
+
+    }
+} 
+
+@media (min-width:481px) and (max-width:1024px){
+
+    .hero-section{
+        height:100vh;
+        width:100vw;
+    }
+
+    video{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+    }
+
+    .hero-content{
+        top:40%;
+        left:30px;
+        max-width:550px;
+    }
+
+    .title{
+        font-size:3rem;
+        line-height:55px;
+        margin-bottom:25px;
+    }
+
+    .title span{
+        font-size:3rem;
+    }
+
+    .tagline{
+        max-width:400px;
+        font-size:1rem;
+        margin-bottom:30px;
+    }
+
+    .btns{
+        gap:15px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        padding:8px 22px;
+    }
+
+}

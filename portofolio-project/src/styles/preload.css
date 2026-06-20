@@ -1,0 +1,16 @@
+.loadbg{
+    width: 100vw;
+    height: 100vh;
+    background-color:#bf0603;
+    animation: fadeup 5s ease;
+}
+@keyframes fadeup{
+    0%{
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}

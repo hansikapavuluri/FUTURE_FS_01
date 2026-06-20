@@ -1,0 +1,124 @@
+.project-section{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.project-overlay{
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    background-color:rgba(0,0,0,0.1);
+}
+.project-container{
+    position: relative;
+    z-index: 1;
+    padding:90px 60px;
+}
+.section-title{
+    font-size:2.5rem;
+    position: relative;
+    z-index: 1;
+    font-weight: 900;
+    margin-bottom: 50px;
+    color:black;
+    text-align: center;
+}
+.card-container{
+    justify-self: center;
+    padding:30px;
+}
+.card-grid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* pushes bottom content down */
+    background-color:white;
+    padding:40px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9);
+    border-radius: 20px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+}
+.card:hover{
+    transform:translateY(15px);
+}
+
+img{
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.card h3{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+
+.proj-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px; /* ensures tags are always at bottom */
+  margin-bottom: 15px;
+ }
+
+.proj-tags span {
+  background: rgba(0,0,0,0.1);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  border: 0.5px solid rgba(0,0,0,0.3);
+
+} 
+.proj-links {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.proj-links a {
+  color: #333;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.proj-links a:hover {
+  color: #ff0000; /* matches your portfolio red */
+}
+
+
+@media (max-width:480px){
+ 
+    .project-container{
+        padding:10px 20px;
+    }
+    .proj-preview{
+        width: 100%;
+    }
+    .card-grid{
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
+    .card h3{
+        font-size:1.2rem;
+    }
+    .card p{
+        font-size:12px;
+    }
+}
+
+
+
+
+
+
+
+

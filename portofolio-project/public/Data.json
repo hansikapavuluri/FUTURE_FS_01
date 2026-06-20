@@ -1,0 +1,26 @@
+
+
+
+[
+  {
+    "title": "🏋️ Gym Website",
+    "description": "A responsive fitness website built with React. Features a modern UI and smooth navigation to showcase gym services and plans.",
+    "demoLink": "#",
+    "githubLink": "#",
+    "image": "portofolio-project/src/assets/project1.png"
+  },
+  {
+    "title": "🎬 Movie Website",
+    "description": "A dynamic movie information site created using React. Users can browse movies, view details, and explore categories with a clean interface.",
+    "demoLink": "#",
+    "githubLink": "#",
+    "image": "movie.png"
+  },
+  {
+    "title": "🌐 Portfolio Website",
+    "description": "My personal portfolio built using the MERN stack. Includes sections like Home, About, Skills, Projects, and Contact with a professional layout.",
+    "demoLink": "#",
+    "githubLink": "#",
+    "image": "portfolio.png"
+  }
+]

@@ -1,0 +1,157 @@
+.contact-section{
+    width: 100vw;
+    min-height: 100vh;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:70px 0;
+
+}
+.contact-overlay{
+    position:absolute;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+.contact-container{
+    padding:70px 100px;
+    width: 60%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    border-radius: 20px;
+    background-color: #A22819;
+    color:white;
+    box-shadow: 0 0 5px darkred;
+    gap:35px;
+    position: relative;
+    z-index: 1;
+}
+
+.left h3{
+    font-size: 2.5rem;
+    color :white;
+    margin-bottom: 20px;
+    text-shadow: -2px 1px 4px black;
+
+}
+.left .links{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.logos{
+    margin-top: 25px;
+    display: flex;
+    gap:10px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap:25px;
+    margin-top: 10px;
+}
+
+.right input{
+    border-radius: 8px;
+    border: none;
+    padding:10px 20px;
+    font-size: 15px;
+    outline: none;
+    width:90%;
+    font-weight: 500;
+}
+.right textarea{
+    height: 150px;
+    width:90%;
+    border: none;
+    outline: none;
+    padding:10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    resize: none;
+    font-weight: 500;
+}
+input:focus,textarea:focus{
+    box-shadow: 0 0 10px black;
+}
+.right button{
+    padding:10px 25px;
+    border:none;
+    width:150px;
+    margin:auto;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    outline: none;
+    background: rgba(0,0,0,0.1);
+    color:white;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+.right button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(255,255,255,0.3);
+}
+.success-msg {
+  color:white;
+  font-weight: 500;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+@media (max-width:480px){
+    .contact-container{
+        flex-direction: column;
+        width: 95%;
+        padding:60px 30px;
+    }
+    .left h3{
+        font-size: 2.2rem;
+    }
+    .left .links,.logos{
+        font-size: 14px;
+    }
+    .right input{
+        width: 95%;
+    }
+    .right textarea{
+        width: 95%;
+    }
+
+
+}
+@media (min-width:481px) and (max-width:1024px){
+
+    .contact-section{
+        width:100%;
+        padding:60px 20px;
+    }
+
+    .contact-container{
+        width:85%;
+        padding:50px 40px;
+        gap:25px;
+    }
+
+    .left h3{
+        font-size:2.2rem;
+    }
+    .left .links,.logos{
+        font-size:11px ;
+
+    }
+
+    .right input,
+    .right textarea{
+        width:100%;
+    }
+
+    .right textarea{
+        height:130px;
+    }
+
+}
